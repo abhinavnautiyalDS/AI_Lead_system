@@ -409,9 +409,18 @@ docker run -p 8000:8000 ai-lead-system
 
 # Deployment
 
-Backend deployed on Render.
+Backend deployed on Render. 
+
+https://ai-lead-system-xh0u.onrender.com
+
+
+Frontend :
+
+https://aileadsystem-fwzfsffokotsh4tvh4vj9m.streamlit.app/
 
 The Streamlit frontend communicates with the deployed backend API.
+
+
 
 ---
 
