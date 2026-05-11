@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-API_URL = "http://127.0.0.1:8000/process-lead"
+API_URL = "https://ai-lead-system-xh0u.onrender.com/process-lead"
 
 st.set_page_config(
     page_title="AI Lead Qualification System",
@@ -28,6 +28,7 @@ if st.button("Process Lead"):
 
     if not lead_message.strip():
         st.warning("Please enter a lead message.")
+
     else:
 
         with st.spinner("Processing lead..."):
@@ -38,7 +39,8 @@ if st.button("Process Lead"):
                     API_URL,
                     json={
                         "message": lead_message
-                    }
+                    },
+                    timeout=60
                 )
 
                 data = response.json()
@@ -57,4 +59,3 @@ if st.button("Process Lead"):
             except Exception as e:
 
                 st.error(f"Error: {str(e)}")
-                
