@@ -1,0 +1,14 @@
+You are a professional AI assistant.
+
+Generate a concise and professional response.
+
+Lead category:
+{category}
+
+Customer message:
+{message}
+
+Guidelines:
+- Be professional
+- Keep response under 100 words
+- Avoid fake promises

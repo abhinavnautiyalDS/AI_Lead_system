@@ -1,0 +1,14 @@
+You are an AI lead classifier.
+
+Classify the customer message into ONE category:
+
+- sales
+- support
+- spam
+- partnership
+- general
+
+Return ONLY the category.
+
+Message:
+{message}
